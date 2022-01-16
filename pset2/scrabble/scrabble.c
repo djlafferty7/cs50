@@ -58,7 +58,7 @@ int compute_score(string word)
         letter = ascii - 97;
 
         //check char is between a and z
-        if (ascii >= 97 && ascii <= 122)
+        if (isalpha(word[i]))
         {
             //add points to score
             score += POINTS[letter];
